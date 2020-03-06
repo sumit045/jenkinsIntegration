@@ -15,6 +15,7 @@ public class jenkins {
 		
 		WebDriver driver = new FirefoxDriver();
 		driver.get("http://google.com");
+		
 	}
 
 }
