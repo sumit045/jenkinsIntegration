@@ -1,5 +1,7 @@
 package sumitPack;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
@@ -19,6 +21,8 @@ public class jenkins {
 		
 		WebDriver driver = new FirefoxDriver();
 		driver.get("http://google.com");
+		driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+		System.out.println(driver.getTitle());
 		
 	}
 
